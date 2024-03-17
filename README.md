@@ -1,3 +1,3 @@
 # BookBot
 
-BookBot is a python program that analyzes text.
+BookBot is a small program that analyzes text by counting letters and words.
