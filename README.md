@@ -1,3 +1,3 @@
-# bookbot
+# BookBot
 
-BookBot is my first [Boot.dev](https://www.boot.dev) project!
+BookBot is a small program that analyzes text by counting letters and words.
