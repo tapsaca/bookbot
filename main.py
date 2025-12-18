@@ -6,11 +6,15 @@ def get_book_text(filepath):
     return file_contents
 
 def main():
+    print("============ BOOKBOT ============")
     text = get_book_text("books/frankenstein.txt")
+    print("Analyzing book found at books/frankenstein.txt...")
     num_words = count_words(text)
+    print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
-    letter_count = count_letters(text)
+    letter_count = dict(sorted(count_letters(text).items(), key=lambda item: item[1], reverse=True))
+    print("--------- Character Count -------")
     for key, value in letter_count.items():
-        print(f"'{key}': {value}")
+        print(f"{key}: {value}")
 
 main()
